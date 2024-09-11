@@ -53,3 +53,25 @@ h1 {
     grid-template-columns: repeat(6, 130px);
     grid-template-rows: repeat(2, cal(130px / 2 * 3));
 }
+
+.card {
+    min-height: calc(130px / 2 * 3);
+    width: 130px;
+    border-radius: 14px;
+    background-color: white;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+}
+
+.front-image {
+    width: 120px;
+    height: 120px;
+}
+
+.card .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
