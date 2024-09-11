@@ -69,6 +69,10 @@ h1 {
     height: 120px;
 }
 
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
 .front, .back {
     backface-visibility: hidden;
     position: absolute;

@@ -1,7 +1,7 @@
 const gameBox = document.querySelector(".game-box");
 let cards = [];
-//let firstCard, secondCard;
-//let lockBoard = false;
+let firstCard, secondCard;
+let lockBoard = false;
 
 
 
@@ -46,12 +46,24 @@ function generateCards() {
         <div class="back"></div>
         `;
         gameBox.appendChild(cardElement);
+        cardElement.addEventListener("click", flipCard);
         
     }
 
 }
 
-function flipCards() {
+function flipCard() {
+    if (lockBoard) return;
+    if (this === firstCard) return;
+
+    this.classList.add("flipped");
+
+    if (!firstCard) {
+        firstCard = this;
+        return;
+    }
+
+    lockBoard = true;
 
 }
 
