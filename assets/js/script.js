@@ -1,5 +1,7 @@
 const gameBox = document.querySelector(".game-box");
 let cards = [];
+//let firstCard, secondCard;
+//let lockBoard = false;
 
 
 
