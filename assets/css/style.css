@@ -45,3 +45,11 @@ h1 {
     background-color: #d37daee8;
     color: white;
 }
+
+.game-box {
+    display: grid;
+    justify-content: center;
+    grid-gap: 16px;
+    grid-template-columns: repeat(6, 130px);
+    grid-template-rows: repeat(2, cal(130px / 2 * 3));
+}
