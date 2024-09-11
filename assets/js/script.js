@@ -11,7 +11,7 @@ function loadCards() {
     .then((res) => res.json())
     .then((data) => {
         cards = [...data,...data];
-        //shuffleCards();
+        shuffleCards();
         generateCards();
     })
 
@@ -24,13 +24,13 @@ function loadCards() {
 loadCards()
 
 function shuffleCards() {
-    /*let currentIndex = cards.length;
+    let currentIndex = cards.length;
     while (currentIndex !== 0) {
         const randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex--;
 
         [cards[currentIndex], cards[randomIndex]] = [cards[randomIndex], cards[currentIndex]];
-    }*/
+    }
 
 }
 
