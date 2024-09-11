@@ -1,0 +1,54 @@
+[
+    {
+        "image":"../assets/images/kangaroo.png",
+        "name": "kangaroo"
+    },
+
+    {
+        "image": "../assets/images/cat.png",
+        "name": "cat"
+
+    },
+
+    {
+        "image":"../assets/images/wolf.png",
+        "name": "wolf"
+    },
+
+    {   "image":"../assets/images/chicken.png",
+        "name":"chicken"
+
+    },
+
+    {
+        "image":"../assets/images/tiger.png",
+        "name":"tiger"
+
+    },
+
+    {
+        "image":"../assets/images/zebra.png",
+        "name":"zebra"
+
+
+    },
+
+    {
+        "image":"../assets/images/penguin.png",
+        "name":"penguin"
+    },
+
+    {
+        "image":"../assets/images/cool.png",
+        "name":"cool"
+    },
+
+    {
+        "image":"../assets/images/seahorse.png",
+        "name":"seahorse"
+    }
+
+
+
+
+]
