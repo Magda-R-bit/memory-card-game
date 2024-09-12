@@ -131,6 +131,7 @@ function disableCards() {
     secondCard.removeEventListener("click", flipCard);
 
     resetBoard();
+    checkWinCondition();
 
 }
 
@@ -144,10 +145,33 @@ function unflipCards() {
 }
 
 function checkWinCondition() {
+    if (!document.querySelector(`.card:not(.flipped)`)) {
+        setTimeout(() => {
+            showWinnerIcon();
+        }, 1000);
+    }
 
 }
 
 function showWinnerIcon() {
+    const winnerIcon = document.querySelector(".winner-icon");
+    winnerIcon.classList.add("flipped");
+
+    winnerIcon.innerHTML = `
+    <div class="winner"> 
+    Congratulations, You Won!<br />
+    with <span class="highlight">${moves}</span> moves<br />
+    in <span class="highlight">${totalTime}</span> seconds
+    </div>
+    `;
+
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: {y: 0.6}
+    });
+
+    clearInterval(timerInterval);
 
 }
 
