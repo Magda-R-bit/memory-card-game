@@ -119,3 +119,21 @@ h1 {
 .winner-icon.flipped {
     display: block;
 }
+
+.game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    text-align: center;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: rgba(86, 36, 165, 0.8);
+    color: white; 
+}
+
+.game-over.show {
+    display: block;
+}

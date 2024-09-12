@@ -6,6 +6,7 @@ let lockBoard = false;
 let timerInterval;
 let totalTime = 0;
 let moves = 0;
+let timeLimit = 100;
 
 
 /**
@@ -97,11 +98,16 @@ function startTimer() {
     timerInterval = setInterval(() => {
         totalTime++;
         timerElement.innerText = `Time: ${totalTime} sec`;
+    
+        if (totalTime >= timeLimit) {
+            gameOver();
+        }
     }, 1000);
 
 }
 
 function stopTimer() {
+    clearInterval(timerInterval);
 
 }
 
@@ -144,6 +150,10 @@ function unflipCards() {
 
 }
 
+/**
+ * Checks if player won the game by verifying if all cards are flipped.
+ * If all flipped, the function triggers the display of winner icon.
+ */
 function checkWinCondition() {
     if (!document.querySelector(`.card:not(.flipped)`)) {
         setTimeout(() => {
@@ -175,7 +185,22 @@ function showWinnerIcon() {
 
 }
 
+/**
+ * Triggers the game-over sequence when the player exceeds the time limit of 100s.
+ * Displays a message and stop the game timer.
+ */
 function gameOver() {
+    const gameOver = document.querySelector(".game-over");
+    gameOver.classList.add("show");
+    gameOver.innerHTML = `
+    <div class="game-over-message">
+       Game Over!<br />
+       You exceeded ${timeLimit} seconds.<br />
+       Try again!
+    </div>
+    `;
+
+    stopTimer();
 
 }
 
