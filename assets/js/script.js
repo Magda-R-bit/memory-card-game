@@ -1,9 +1,11 @@
 const gameBox = document.querySelector(".game-box");
+const recordMoves = document.querySelector(".moves");
 let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
 let timerInterval;
 let totalTime = 0;
+let moves = 0;
 
 
 /**
@@ -78,7 +80,10 @@ function flipCard() {
 
     secondCard = this;
     lockBoard = true;
+    moves++;
+    recordMoves.innerText = `Moves: ${moves}`;
 
+    startTimer();
     checkForMatch();
 
 }
