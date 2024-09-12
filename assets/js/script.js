@@ -112,10 +112,15 @@ function stopTimer() {
 }
 
 function resetTimer() {
+    stopTimer();
+    totalTime = 0;
+    document.querySelector(".timer").innerText = `Timer: ${totalTime} sec`;
 
 }
 
 function resetMoves() {
+    moves = 0;
+    recordMoves.innerText = `Moves: ${moves}`;
 
 }
 
@@ -212,5 +217,20 @@ function resetBoard() {
 }
 
 function restart() {
+    const winnerIcon = document.querySelector(".winner-icon");
+    if (winnerIcon) {
+        winnerIcon.classList.remove("flipped");
+    }
 
+    const gameOver = document.querySelector(".game-over");
+    if (gameOver) {
+        gameOver.classList.remove("show");
+    }
+
+    resetBoard();
+    shuffleCards();
+    resetMoves();
+    resetTimer();
+    gameBox.innerHTML = "";
+    generateCards();
 }
