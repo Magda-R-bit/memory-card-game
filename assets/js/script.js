@@ -2,6 +2,8 @@ const gameBox = document.querySelector(".game-box");
 let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
+let timerInterval;
+let totalTime = 0;
 
 
 /**
@@ -82,6 +84,15 @@ function flipCard() {
 }
 
 function startTimer() {
+    const timerElement = document.querySelector(".timer");
+    if (timerInterval) {
+        clearInterval(timerInterval);
+    }
+
+    timerInterval = setInterval(() => {
+        totalTime++;
+        timerElement.innerText = `Time: ${totalTime} sec`;
+    }, 1000);
 
 }
 
