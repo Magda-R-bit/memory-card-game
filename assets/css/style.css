@@ -10,6 +10,11 @@ h1 {
     font-size: 48px;
     color: rgb(255, 253, 253);
 }
+.logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+}
 
 .records {
     display: flex;
