@@ -10,23 +10,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Memory Cards Game</title>
+
 </head>
 
 <body>
+    <!-- The Logo  -->
     <h1>
-        <img class="logo" src="assets/images/memoryGame.png" alt="logo"> Memory Cards </h1>
-    <div class="game-box"></div>
+        <img class="logo" src="assets/images/memoryGame.png" alt="logo"> Memory Cards
+    </h1>
+    <!-- The open rules button -->
+    <div class="howTo"><button id="howButton">How to play</button></div>
+    <!-- The Rules -->
+    <data id="myRules" class="rules">
+        <!-- The Rules content -->
+        <div class="rules-content">
+            <span class="close">&times;</span>
+            <h2>Instructions: </h2>
+            <p>Match all the pairs of cards as quickly as possible. </p>
+            <br>
+            <ul>
+                <li>Flip the cards: Click on any two cards to flip them over.</li>
+                <li>Match all the cards: If two cards match, they will remain flipped over. If not, they will flip back.
+                </li>
+                <li>Keep matching pairs: Continue flipping cards and trying to match pairs.</li>
+                <li>Win the game: The game ends when all pairs have been matched.</li>
+            </ul>
+            <p>Game over conditions:</p>
+            <ul>
+                <li>If you exceed the time limit of 100s, the game will end.</li>
+            </ul>
+            <p>Winning:</p>
+            <ul>
+                <li>Match all the cards before time runs out to win. Your total time and numbers of moves will be
+                    displayed at the end of the game.</li>
+            </ul>
+        </div>
 
+
+    </data>
+    <!-- The Game -->
+    <div class="game-box"></div>
+    <!-- The Winner icon -->
     <div class="winner-icon">
         <div class="winner">Congratulation, You Won!</div>
         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@latest/dist/confetti.browser.min.js"></script>
     </div>
-
+    <!-- The Game over icon -->
     <div class="game-over">
         <div class="game-over-message">Game Over!</div>
     </div>
-
+    <!-- The Control panel -->
     <div class="control-panel">
         <div class="records">
             <div class="moves">Moves: 0</div>
