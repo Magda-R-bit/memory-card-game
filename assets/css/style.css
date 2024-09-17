@@ -18,6 +18,7 @@ h1 {
 
 /* Game rules style */
 
+
 .howTo {
     display: flex;
     justify-content: center;
@@ -31,6 +32,48 @@ h1 {
     background-color: #ad4984ad;
     color: white;
 }
+
+.rules {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    overflow: auto;
+    background-color: rgba(88, 39, 82, 0.623);
+    color: rgb(255, 253, 253);
+    font-size: 20px;
+    border-radius: 35px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.rules-content {
+    background-color: rgba(86, 36, 165, 0.8);
+    margin: auto;
+    padding: 19px;
+    color: rgb(255, 253, 253);
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 2px;
+    font-weight: bold;
+    margin: 35px;
+}
+
+p {
+    text-align: center;
+    font-size: 26 px;
+    font-weight: bold;
+}
+
+li {
+    text-align: justify;
+    padding-bottom: 9px;
+    font-size: 20px;
+}
+
 
 
 
