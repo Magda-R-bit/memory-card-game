@@ -16,7 +16,7 @@ h1 {
     border-radius: 4px;
 }
 
-/* Game rules style */
+/* The Game rules with button */
 
 
 .howTo {
@@ -90,7 +90,7 @@ li {
 }
 
 
-
+/* Moves and time records */
 
 .records {
     display: flex;
@@ -100,19 +100,24 @@ li {
     padding: 15px;
 }
 
-.start {
+/* Start and pause buttons */
+
+.gameBtn {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 10px;
 }
 
-.start button {
+.start button,
+.pause button {
     padding: 5px 20px;
     font-size: 25px;
     border-radius: 10px;
     background-color: #ad4984ad;
     color: white;
 }
+
+/* Reset button */
 
 .actions {
     display: flex;
@@ -127,6 +132,8 @@ li {
     color: white;
 }
 
+/* Game box */
+
 .game-box {
     display: grid;
     justify-content: center;
@@ -134,6 +141,8 @@ li {
     grid-template-columns: repeat(6, 130px);
     grid-template-rows: repeat(2, cal(130px / 2 * 3));
 }
+
+/* Cards front and back style */
 
 .card {
     min-height: calc(130px / 2 * 3);
@@ -178,6 +187,8 @@ li {
     background-size: cover;
 }
 
+/* Winner icon */
+
 .winner-icon {
     display: none;
     position: absolute;
@@ -200,6 +211,8 @@ li {
 .winner-icon.flipped {
     display: block;
 }
+
+/* Game over icon */
 
 .game-over {
     display: none;
