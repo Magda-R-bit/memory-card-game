@@ -1,3 +1,9 @@
+// Rules
+let rules = document.getElementById("myRules");
+let how = document.getElementById("howButton");
+let span = document.getElementsByClassName("close")[0];
+
+// Game
 const gameBox = document.querySelector(".game-box");
 const recordMoves = document.querySelector(".moves");
 let cards = [];
@@ -8,6 +14,23 @@ let totalTime = 0;
 let moves = 0;
 let timeLimit = 100;
 
+// Open and close functions for the rules icon
+
+how.onclick = function () {
+    rules.style.display = "block";
+}
+
+span.onclick = function () {
+    rules.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == rules) {
+        rules.style.display = "none";
+    } else if (!rules.contains(event.target) && event.target != how) {
+        rules.style.display = "none";
+    }
+}
 
 /**
  * Loads card data from cards.json file, duplicates it to create pairs, and prepares the game.
@@ -18,16 +41,16 @@ let timeLimit = 100;
 
 function loadCards() {
     fetch("./data/cards.json")
-    .then((res) => res.json())
-    .then((data) => {
-        cards = [...data,...data];
-        shuffleCards();
-        generateCards();
-    })
+        .then((res) => res.json())
+        .then((data) => {
+            cards = [...data, ...data];
+            shuffleCards();
+            generateCards();
+        })
 
-    .catch(error => {
-        console.error("Error fetching the cards:", error)
-    });
+        .catch(error => {
+            console.error("Error fetching the cards:", error)
+        });
 
 }
 
@@ -52,7 +75,7 @@ function generateCards() {
         const cardElement = document.createElement("div");
         cardElement.classList.add("card");
         cardElement.setAttribute("data-name", card.name);
-        cardElement.innerHTML =`
+        cardElement.innerHTML = `
         <div class="front">
         <img class ="front-image" src=${card.image} />
         </div>
@@ -63,7 +86,7 @@ function generateCards() {
 
         // Add event listener to handle the flip action when clicked
         cardElement.addEventListener("click", flipCard);
-        
+
     }
 
 }
@@ -98,7 +121,7 @@ function startTimer() {
     timerInterval = setInterval(() => {
         totalTime++;
         timerElement.innerText = `Time: ${totalTime} sec`;
-    
+
         if (totalTime >= timeLimit) {
             gameOver();
         }
@@ -183,7 +206,9 @@ function showWinnerIcon() {
     confetti({
         particleCount: 100,
         spread: 70,
-        origin: {y: 0.6}
+        origin: {
+            y: 0.6
+        }
     });
 
     clearInterval(timerInterval);
