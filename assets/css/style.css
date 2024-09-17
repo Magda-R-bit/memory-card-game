@@ -16,6 +16,24 @@ h1 {
     border-radius: 4px;
 }
 
+/* Game rules style */
+
+.howTo {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.howTo button {
+    padding: 5px 20px;
+    font-size: 21px;
+    border-radius: 10px;
+    background-color: #ad4984ad;
+    color: white;
+}
+
+
+
 .records {
     display: flex;
     justify-content: space-evenly;
