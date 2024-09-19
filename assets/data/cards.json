@@ -1,51 +1,51 @@
 [
     {
-        "image":"../images/kangaroo.png",
+        "image":"assets/images/kangaroo.png",
         "alt": "kangaroo"
     },
 
     {
-        "image": "../images/cat.png",
+        "image": "assets/images/cat.png",
         "alt": "cat"
         
 
     },
 
     {
-        "image":"../images/wolf.png",
+        "image":"assets/images/wolf.png",
         "alt": "wolf"
     },
 
-    {   "image":"../images/chicken.png",
+    {   "image":"assets/images/chicken.png",
         "alt":"chicken"
 
     },
 
     {
-        "image":"../images/tiger.png",
+        "image":"assets/images/tiger.png",
         "alt":"tiger"
 
     },
 
     {
-        "image":"../images/zebra.png",
+        "image":"assets/images/zebra.png",
         "alt":"zebra"
 
 
     },
 
     {
-        "image":"../images/penguin.png",
+        "image":"assets/images/penguin.png",
         "alt":"penguin"
     },
 
     {
-        "image":"../images/cool.png",
+        "image":"assets/images/cool.png",
         "alt":"cool"
     },
 
     {
-        "image":"../images/seahorse.png",
+        "image":"assets/images/seahorse.png",
         "alt":"seahorse"
     }
 
