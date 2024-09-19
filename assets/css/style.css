@@ -10,6 +10,7 @@ h1 {
     font-size: 48px;
     color: rgb(255, 253, 253);
 }
+
 .logo {
     width: 35px;
     height: 35px;
@@ -163,7 +164,8 @@ li {
     transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
     backface-visibility: hidden;
     position: absolute;
     height: 100%;
@@ -225,7 +227,7 @@ li {
     border-radius: 15px;
     padding: 25px;
     background-color: rgba(86, 36, 165, 0.8);
-    color: white; 
+    color: white;
 }
 
 .game-over.show {
