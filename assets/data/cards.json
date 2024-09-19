@@ -1,51 +1,52 @@
 [
     {
-        "image":"../assets/images/kangaroo.png",
-        "name": "kangaroo"
+        "image":"../images/kangaroo.png",
+        "alt": "kangaroo"
     },
 
     {
-        "image": "../assets/images/cat.png",
-        "name": "cat"
-
-    },
-
-    {
-        "image":"../assets/images/wolf.png",
-        "name": "wolf"
-    },
-
-    {   "image":"../assets/images/chicken.png",
-        "name":"chicken"
+        "image": "../images/cat.png",
+        "alt": "cat"
+        
 
     },
 
     {
-        "image":"../assets/images/tiger.png",
-        "name":"tiger"
+        "image":"../images/wolf.png",
+        "alt": "wolf"
+    },
+
+    {   "image":"../images/chicken.png",
+        "alt":"chicken"
 
     },
 
     {
-        "image":"../assets/images/zebra.png",
-        "name":"zebra"
+        "image":"../images/tiger.png",
+        "alt":"tiger"
+
+    },
+
+    {
+        "image":"../images/zebra.png",
+        "alt":"zebra"
 
 
     },
 
     {
-        "image":"../assets/images/penguin.png",
-        "name":"penguin"
+        "image":"../images/penguin.png",
+        "alt":"penguin"
     },
 
     {
-        "image":"../assets/images/cool.png",
-        "name":"cool"
+        "image":"../images/cool.png",
+        "alt":"cool"
     },
 
     {
-        "image":"../assets/images/seahorse.png",
-        "name":"seahorse"
+        "image":"../images/seahorse.png",
+        "alt":"seahorse"
     }
 
 
