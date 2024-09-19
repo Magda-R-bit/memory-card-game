@@ -40,7 +40,7 @@ window.onclick = function (event) {
  */
 
 function loadCards() {
-    fetch("./data/cards.json")
+    fetch("assets/data/cards.json")
         .then((res) => res.json())
         .then((data) => {
             cards = [...data, ...data];
