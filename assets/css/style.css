@@ -8,14 +8,14 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 44px;
     color: rgb(255, 253, 253);
     margin: 20px;
 }
 
 .logo {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
     border-radius: 4px;
 }
 
