@@ -1,11 +1,13 @@
 [
     {
         "image":"assets/images/kangaroo.png",
+        "name": "kangaroo",
         "alt": "kangaroo"
     },
 
     {
         "image": "assets/images/cat.png",
+        "name": "cat",
         "alt": "cat"
         
 
@@ -13,22 +15,26 @@
 
     {
         "image":"assets/images/wolf.png",
+        "name": "wolf",
         "alt": "wolf"
     },
 
-    {   "image":"assets/images/chicken.png",
+    {   "image":"assets/images/chicken.png", 
+        "name": "chicken",
         "alt":"chicken"
 
     },
 
     {
         "image":"assets/images/tiger.png",
+        "name": "tiger",
         "alt":"tiger"
 
     },
 
     {
         "image":"assets/images/zebra.png",
+        "name": "zebra",
         "alt":"zebra"
 
 
@@ -36,16 +42,19 @@
 
     {
         "image":"assets/images/penguin.png",
+        "name": "penguin",
         "alt":"penguin"
     },
 
     {
         "image":"assets/images/cool.png",
+        "name": "cool",
         "alt":"cool"
     },
 
     {
         "image":"assets/images/seahorse.png",
+        "name": "seahorse",
         "alt":"seahorse"
     }
 
