@@ -25,12 +25,12 @@ h1 {
 .howTo {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 .howTo button {
-    padding: 5px 20px;
-    font-size: 21px;
+    padding: 3px 12px;
+    font-size: 20px;
     border-radius: 10px;
     background-color: #ad4984;
     color: #ffffff;
@@ -113,8 +113,8 @@ li {
 
 .start button,
 .pause button {
-    padding: 5px 20px;
-    font-size: 25px;
+    padding: 3px 15px;
+    font-size: 18px;
     border-radius: 10px;
     background-color: #ad4984;
     color: #ffffff;
@@ -128,9 +128,9 @@ li {
 }
 
 .actions button {
-    padding: 4px 8px;
+    padding: 4px 10px;
     font-size: 14px;
-    border-radius: 7px;
+    border-radius: 10px;
     background-color: #ad4984;
     color: #ffffff;
 }
