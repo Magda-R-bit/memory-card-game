@@ -250,22 +250,15 @@ li {
     .howTo {
         padding: 6px;
     }
+
     .howTo button {
         font-size: 17px;
-    }
-
-    rules {
-        border-radius: 25px;
-        top: -30%;
-        left: -30%;
-        transform: translate(30%, 30%);
     }
 
     .game-box {
         padding: 6px;
         margin: 2px;
         grid-gap: 8px;
-        grid-gap: 10px;
         grid-template-columns: repeat(6, 90px);
         grid-template-rows: repeat(2, cal(90px / 2 * 3));
     }
@@ -294,5 +287,37 @@ li {
     .pause button {
         padding: 4px 19px;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .game-box {
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(2, cal(70px * 1.5));
+    }
+
+    .card {
+        min-height: calc(70px * 1.5);
+        width: 70px;
+    }
+
+    .front-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin: 5px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    li {
+        padding-bottom: 4px;
+        font-size: 11px;
     }
 }
