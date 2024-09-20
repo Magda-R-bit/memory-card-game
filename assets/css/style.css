@@ -42,8 +42,8 @@ h1 {
     z-index: 200;
     overflow: auto;
     background-color: rgba(50, 25, 50, 0.9);
-    border-radius: 35px;
-    top: 57%;
+    border-radius: 25px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -58,22 +58,22 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 48px;
+    font-size: 40px;
     padding: 2px;
     font-weight: bold;
-    margin: 25px;
+    margin: 15px;
 }
 
 p {
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 li {
     text-align: justify;
     padding-bottom: 9px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* The Rules close button */
@@ -142,7 +142,7 @@ li {
     justify-content: center;
     grid-gap: 16px;
     grid-template-columns: repeat(6, 120px);
-    grid-template-rows: repeat(2, cal(130px / 2 * 3));
+    grid-template-rows: repeat(2, cal(120px / 2 * 3));
 }
 
 /* Cards front and back style */
@@ -234,4 +234,65 @@ li {
 
 .game-over.show {
     display: block;
+}
+
+@media screen and (max-width: 1280px) {
+    .logo {
+        height: 28px;
+        width: 28px;
+    }
+
+    h1 {
+        font-size: 37px;
+        margin: 10px;
+    }
+
+    .howTo {
+        padding: 6px;
+    }
+    .howTo button {
+        font-size: 17px;
+    }
+
+    rules {
+        border-radius: 25px;
+        top: -30%;
+        left: -30%;
+        transform: translate(30%, 30%);
+    }
+
+    .game-box {
+        padding: 6px;
+        margin: 2px;
+        grid-gap: 8px;
+        grid-gap: 10px;
+        grid-template-columns: repeat(6, 90px);
+        grid-template-rows: repeat(2, cal(90px / 2 * 3));
+    }
+
+    .card {
+        min-height: calc(90px / 2 * 3);
+        width: 90px;
+    }
+
+    .front-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .records {
+        padding: 3px;
+        font-size: 15px;
+    }
+
+    .gameBtn {
+        padding: 3px;
+        font-size: 12px;
+    }
+
+    .start button,
+    .pause button {
+        padding: 4px 19px;
+        font-size: 15px;
+    }
 }
