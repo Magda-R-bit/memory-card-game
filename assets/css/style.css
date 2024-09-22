@@ -430,3 +430,21 @@ li {
         padding: 3px 5px;
     }
 }
+
+@media screen and (max-width: 320px) {
+    
+       .game-box {
+        grid-template-columns: repeat(3, 39px);
+        grid-template-rows: repeat(2, cal(43px * 1.5));
+    }
+
+    .card {
+        min-height: calc(39px * 1.5);
+        width: 39px;
+    }
+
+    .front-image {
+        width: 27px;
+        height: 27px;
+    }
+}
