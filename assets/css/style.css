@@ -343,14 +343,42 @@ li {
 
 @media screen and (max-width: 375px) {
 
+    .logo {
+        height: 17px;
+        width: 17px;
+    }
+
+    h1 {
+        font-size: 21px;
+        margin: 3px;
+    }
+
+    .howTo {
+        padding: 2px;
+    }
+
+    .howTo button {
+        font-size: 9px;
+        padding: 3px;
+    }
+
+    .rules {
+        top: 51%;
+        left: 52%;
+    }
+
+    .rules-content {
+        padding: 8px;
+    }
+
     .game-box {
-        grid-template-columns: repeat(3, 50px);
-        grid-template-rows: repeat(2, cal(50px * 1.5));
+        grid-template-columns: repeat(3, 43px);
+        grid-template-rows: repeat(2, cal(43px * 1.5));
     }
 
     .card {
-        min-height: calc(50px * 1.5);
-        width: 50px;
+        min-height: calc(43px * 1.5);
+        width: 43px;
     }
 
     .front-image {
@@ -359,16 +387,46 @@ li {
     }
     
     h2 {
-        font-size: 18px;
+        font-size: 16px;
         margin: 2px;
     }
 
     p {
         font-size: 10px;
+        margin: 6px;
+    }
+
+    ul {
+        margin: 3px;
+        padding: 6px;
     }
 
     li {
         padding-bottom: 4px;
         font-size: 9px;
+        text-align: left;
+    }
+
+    .records {
+        font-size: 11px;
+    }
+    
+    .start button,
+    .pause button {
+        padding: 3px 5px;
+        font-size: 9px;
+    }
+
+    .close {
+        font-size: 18px;
+    }
+
+    .actions {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+    .actions button {
+        font-size: 9px;
+        padding: 3px 5px;
     }
 }
