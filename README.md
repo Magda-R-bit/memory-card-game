@@ -81,7 +81,18 @@ Players have the option to start the game by clicking the "Start" button or simp
 
 ## Design
 
-   
+* Layout:
+  - The game features are simple, grid-based with 18 cards, unflipped at the start of the game.
+* Color:
+  - The game uses a pink, purple, and blue shades promoting positive atmosphere.
+
+  ![Screenshot of colors](/assets/images/readMe/colors.png)
+
+* Title:
+  - "Yeseva" font family from Google Fonts, is chosen to create the title, and rules for this game. 
+
+* Logo and cards images:  
+  - Icons from Flaticon are used to create both, the game logo, and the images on the cards.
 
 ### Wireframes
 
