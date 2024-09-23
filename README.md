@@ -128,10 +128,12 @@ Players have the option to start the game by clicking the "Start" button or simp
 ## Testing
 
 ### Manual Test Cases and Results
+* Testing completed on the below browser:
+  - Chrome
+  - DuckDuckGo
+  - Edge
+  - FireFox
 
-![Screenshot of web speed](/assets/images/readMe/webMobileTest.png)
-
-![Screenshot of desktop test](/assets/images/readMe/desktopTest.png)
 
  ### Automated Validator Testing
 
@@ -146,6 +148,12 @@ Players have the option to start the game by clicking the "Start" button or simp
 - [JSHint Validator](https://jshint.com/)
 
 ![Screenshot of js test](/assets/images/readMe/jsTest.png)
+
+- [PageSpeed](https://pagespeed.web.dev/)
+
+![Screenshot of web speed](/assets/images/readMe/webMobileTest.png)
+
+![Screenshot of desktop test](/assets/images/readMe/desktopTest.png)
 
 ## Bugs
 ### Unfixed Bugs
