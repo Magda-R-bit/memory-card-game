@@ -156,7 +156,15 @@ Players have the option to start the game by clicking the "Start" button or simp
 ![Screenshot of desktop test](/assets/images/readMe/desktopTest.png)
 
 ## Bugs
+* Images not loading with URL.
+  - In earlier versions of the project, images for the cards were loaded from the a json file. However, after deploying my project, I have noticed, that cards appear blank when flipped. The images failed to load.
+
+* Solution.
+  - To fix this bug, I verified the path in json file and ensure was correct.
+  - I have moved data folder with json file into assets folder and changed the path in json file. 
+
 ### Unfixed Bugs
+* No unfixed bugs.
 
 ## Deployment
 
@@ -174,6 +182,7 @@ Players have the option to start the game by clicking the "Start" button or simp
 - [CodingNepal](https://www.youtube.com/watch?v=DABkhfsBAWw)
 - [PortEXE](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=0s)
 - [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp) Modal Box for rules icon.
+- [stackoverflow](https://stackoverflow.com/) Fix the bug.
 
 
 
