@@ -129,6 +129,10 @@ Players have the option to start the game by clicking the "Start" button or simp
 
 ### Manual Test Cases and Results
 
+![Screenshot of web speed](/assets/images/readMe/webMobileTest.png)
+
+![Screenshot of desktop test](/assets/images/readMe/desktopTest.png)
+
  ### Automated Validator Testing
 
 - [HTML Validator](https://validator.w3.org/)
@@ -140,6 +144,8 @@ Players have the option to start the game by clicking the "Start" button or simp
 ![Screenshot of css test](/assets/images/readMe/cssTest.png)
 
 - [JSHint Validator](https://jshint.com/)
+
+![Screenshot of js test](/assets/images/readMe/jsTest.png)
 
 ## Bugs
 ### Unfixed Bugs
