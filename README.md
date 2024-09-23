@@ -135,7 +135,22 @@ Players have the option to start the game by clicking the "Start" button or simp
   - FireFox
 
 
- ### Automated Validator Testing
+
+|   | Test                           | Steps                                     | Expected Results                                                  | Actual Results                                              | Pass/Fail | Comments                                                                                                        |
+| - | ------------------------------ | ----------------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------- |
+|   |                                |                                           |                                                                   |                                                             |           |                                                                                                                 |
+| 1 | Check 'How to play' button     | Click 'How to play' button                | Game instructions should be displayed                             | Instructions displayed correctly                            | Pass      |                                                                                                                 |
+| 2 | Check if game starts correctly | Click the 'Start' button                  | Game starts and timer begins                                      | Game started, timer began correctly                         | Pass      |                                                                                                                 |
+| 3 | Verify image load on cards     | Click the card to flip                    | Images should appear on the flipped cards                         | Images failed to load due to json incorrect folder and path | Fail      | Fixed by moving data folder with cards.json file into assets folder and correcting the path in cards.json file. |
+| 4 | Test card flipping             | Flip any two cards                        | The two cards should flip and show their images                   | Cards flipped and showed the images                         | Pass      |                                                                                                                 |
+| 5 | Test 'Pause' button            | Click the 'Pause' button                  | Game should pause, and timer should stop                          | Game paused, timer stopped                                  | Pass      |                                                                                                                 |
+| 6 | Exceed time limit              | Start the game. Let the timer exceed 100s | Game Over' icon should appear                                     | Game Over' icon appeared after 100 seconds                  | Pass      |                                                                                                                 |
+| 7 | Winning conditions             | Match all the pairs                       | A winner icon should appear along with confetti                   | Winner icon and confetti displayed correctly                | Pass      |                                                                                                                 |
+| 8 | 'Restart' button                | Click the 'Restart'  button               | Game should restart, all cards unflipped, timer and moves restart | Game restarted and cards returned to original state         | Pass      |                                                                                                                 |
+
+
+
+### Automated Validator Testing
 
 - [HTML Validator](https://validator.w3.org/)
 
