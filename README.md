@@ -36,8 +36,46 @@ Players have the option to start the game by clicking the "Start" button or simp
 
 #### Existing Features
 
+* Title with logo and How To Play button
+  - By clicking this button user can open and read the game rules.
 
-#### Future Features
+  ![Screenshot of How to play button](/assets/images/readMe/howToPlay.png)
+
+  - Icon with Instructions can be easily closed by clicking anywhere on the screen or on the close button.
+
+  ![Screenshot of rules](/assets/images/readMe/rules.png)
+
+* Home Page
+  - The landing page features a clean and simple design including a logo, the game title, and 18 unflipped cards arranged in a grid.
+  Player can interact with the game using four buttons: "How To Play", "Start", "Pause" and "Reset". 
+
+  ![Screenshot of Home Page](/assets/images/readMe/homePage.png)
+
+* Control Panel
+  - The game includes a control panel with three buttons:"Start", "Pause" and "Reset". Additionally, the panel displays the recorded number of moves and elapsed time during gameplay.
+
+  ![Screenshot of Control Panel](/assets/images/readMe/controlPanel.png)
+
+* Winner Icon
+  - When the player wins, the winner icon appears, displaying the tracked time and number of moves along with a celebratory confetti animation.
+
+  ![Screenshot of winner icon](/assets/images/readMe/winnerIcon.png)
+
+* Game Over Icon
+  - If the player exceeds the time limit of 100 seconds, a game over icon appears, signaling the end of the game.
+
+  ![Screenshot of game over icon](/assets/images/readMe/gameOver.png)
+
+
+#### Future Features:
+  1. Sound effect.
+     - Introduce background music to make the experience more immersive.
+  2. Multiple difficulty levels.
+     - Add different difficulty modes with varying grid size.
+  3. Themes.
+     - Allow players to choose from different card themes (sports, fruits).
+  4. Progressive gameplay.
+     - Add levels, where the number of cards grows.
 
 
 
