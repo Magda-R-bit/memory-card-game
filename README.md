@@ -7,7 +7,7 @@ Players have the option to start the game by clicking the "Start" button or simp
 
 ![Screenshot of Responsive Mockup](/assets/images/readMe/websiteMockup.png)
 
-[Project live view]()
+[Project live view](https://magda-r-bit.github.io/memory-card-game/)
 
 
 
@@ -169,12 +169,31 @@ Players have the option to start the game by clicking the "Start" button or simp
 ## Deployment
 
 ### Version Control
+ - The site was developed using Gitpod editor and pushed to GitHub, to the remote repository memory-card-game.
+ - Git commands were utilized to push the code to the repository.
+
 ### Deployment to Github Pages
+ - This website was deployed to GitHub Pages with the following steps:
+  - Navigate to the repository on GitHub
+  - Go to the settings tab in repository
+  - Scroll down to the "Pages" section
+  - Select the branch
+  - Under "Source" select the branch to deploy ('main')
+  - Save the settings
+ - Link to the website: [Memory Cards Game](https://magda-r-bit.github.io/memory-card-game/)
+
 ### How to clone the repository
-### How to clone the repository
+ - Go to the https://magda-r-bit.github.io/memory-card-game/ repository on GitHub
+ - Click on the Code button located above the project file
+ - Click on HTTPS and copy the repository link
+ - Open the IDE and paste the copied git url into the IDE terminal
+ - Project is created as a local clone
 
 
 ## Credits
+ - **Special Thanks**:
+   - **Spencer Barriball**- For your mentorship. Your insights and advices were crucial to the success of this project.
+
 
 ### Inspiration
 - [JavaScript Academy](https://www.youtube.com/watch?v=xWdkt6KSirw)
@@ -182,7 +201,8 @@ Players have the option to start the game by clicking the "Start" button or simp
 - [CodingNepal](https://www.youtube.com/watch?v=DABkhfsBAWw)
 - [PortEXE](https://www.youtube.com/watch?v=3uuQ3g92oPQ&t=0s)
 - [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp) Modal Box for rules icon.
-- [stackoverflow](https://stackoverflow.com/) Fix the bug.
+- [stackoverflow](https://stackoverflow.com/) Used to fix the bug.
+- [Louibens](https://louibens.github.io/PP2-The-World-Quiz/) Used to create README file structure. 
 
 
 
