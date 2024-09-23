@@ -22,7 +22,14 @@ Players have the option to start the game by clicking the "Start" button or simp
 
 ## User Experience (UX)
 
--   ### User stories
+-   ### User Stories:
+      1. As a player, I want to read the game rules.
+      2. As a player, I want to start a new game and pause at any time.
+      3. As a player, I want to click on card to easily flip it, to see what image is on the other side.
+      4. As a player, I want to match two cards, to remove them from the board.
+      5. As a player, I want to restart the game at any time, so I can try again with a fresh start.
+      6. As a player I want to see a congratulatory message when I match all the cards, so I know I have completed the game, with tracked moves and time.
+      7. As a player, I want to see a game over message when I exceed the time limit, so that I know the game has ended.
 
       
 ## Features
