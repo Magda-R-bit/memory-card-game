@@ -1,10 +1,14 @@
 # Memory Cards 
 
-[Live project view]()
+Memory Cards Game is a fun and interactive web-based game designed for anyone looking to improve their memory skills. By matching pairs of cards, players can challange themselves and enhance their concentration while enjoying an engaging experience. 
+The game consists of 18 cards (9 pairs). Before starting, players can read the rules by clicking the "How to Play" button.
 
-![Screenshot of Responsive Mockup]()
+Players have the option to start the game by clicking the "Start" button or simply flipping any card. Once the first pair of cards is clicked, a timer begins, and moves are tracked. Players can pause the game or restart it at any time, making it easy to take breaks and try again.
 
-Description of the game.
+![Screenshot of Responsive Mockup](/assets/images/readMe/websiteMockup.png)
+
+[Project live view]()
+
 
 
 ## Contents
