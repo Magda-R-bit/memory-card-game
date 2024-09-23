@@ -142,7 +142,7 @@ li {
     justify-content: center;
     grid-gap: 16px;
     grid-template-columns: repeat(6, 116px);
-    grid-template-rows: repeat(2, cal(116px / 2 * 3));
+    grid-template-rows: repeat(2, calc(116px / 2 * 3));
 }
 
 /* Cards front and back style */
@@ -260,7 +260,7 @@ li {
         margin: 2px;
         grid-gap: 8px;
         grid-template-columns: repeat(6, 90px);
-        grid-template-rows: repeat(2, cal(90px / 2 * 3));
+        grid-template-rows: repeat(2, calc(90px / 2 * 3));
     }
 
     .card {
@@ -294,7 +294,7 @@ li {
 
     .game-box {
         grid-template-columns: repeat(6, 70px);
-        grid-template-rows: repeat(2, cal(70px / 2 * 3));
+        grid-template-rows: repeat(2, calc(70px / 2 * 3));
     }
 
     .card {
@@ -313,7 +313,7 @@ li {
 
     .game-box {
         grid-template-columns: repeat(3, 70px);
-        grid-template-rows: repeat(2, cal(70px * 1.5));
+        grid-template-rows: repeat(2, calc(70px * 1.5));
     }
 
     .card {
@@ -373,7 +373,7 @@ li {
 
     .game-box {
         grid-template-columns: repeat(3, 43px);
-        grid-template-rows: repeat(2, cal(43px * 1.5));
+        grid-template-rows: repeat(2, calc(43px * 1.5));
     }
 
     .card {
@@ -436,7 +436,7 @@ li {
 
     .game-box {
         grid-template-columns: repeat(3, 39px);
-        grid-template-rows: repeat(2, cal(43px * 1.5));
+        grid-template-rows: repeat(2, calc(43px * 1.5));
     }
 
     .card {

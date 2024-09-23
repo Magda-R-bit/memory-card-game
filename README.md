@@ -132,6 +132,9 @@ Players have the option to start the game by clicking the "Start" button or simp
  ### Automated Validator Testing
 
 - [HTML Validator](https://validator.w3.org/)
+
+![Screenshot of html test](/assets/images/readMe/htmlTest.png)
+
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [JSHint Validator](https://jshint.com/)
 
