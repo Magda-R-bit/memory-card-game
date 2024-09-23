@@ -311,14 +311,22 @@ li {
 
 @media screen and (max-width: 650px) {
 
+    h1 {
+        font-size: 28px;
+    }
+
+    .howTo button {
+        font-size: 14px;
+    }
+
     .game-box {
-        grid-template-columns: repeat(3, 70px);
-        grid-template-rows: repeat(2, calc(70px * 1.5));
+        grid-template-columns: repeat(3, 68px);
+        grid-template-rows: repeat(2, calc(68px * 1.5));
     }
 
     .card {
-        min-height: calc(70px * 1.5);
-        width: 70px;
+        min-height: calc(68px * 1.5);
+        width: 68px;
     }
 
     .front-image {
@@ -339,7 +347,19 @@ li {
         padding-bottom: 4px;
         font-size: 11px;
     }
+
+    .start button,
+    .pause button {
+        padding: 4px 15px;
+        font-size: 13px;
+    }
+
+    .actions button {
+        font-size: 11px;
+        padding: 3px 5px;
+    }
 }
+
 
 @media screen and (max-width: 375px) {
 
@@ -435,17 +455,70 @@ li {
 @media screen and (max-width: 320px) {
 
     .game-box {
-        grid-template-columns: repeat(3, 39px);
-        grid-template-rows: repeat(2, calc(43px * 1.5));
+        grid-template-columns: repeat(3, 38px);
+        grid-template-rows: repeat(2, calc(38px * 1.5));
     }
 
     .card {
-        min-height: calc(39px * 1.5);
-        width: 39px;
+        min-height: calc(38px * 1.5);
+        width: 38px;
     }
 
     .front-image {
         width: 27px;
         height: 27px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    h1 {
+        font-size: 16px;
+    }
+
+    .logo {
+        height: 15px;
+        width: 15px;
+    }
+
+    .howTo button {
+        font-size: 7px;
+        padding: 3px;
+    }
+
+    .rules {
+        top: 54%;
+        left: 53%;
+    }
+
+    .rules-content {
+        padding: 2px;
+    }
+
+    h2 {
+        font-size: 11px;
+    }
+
+    p {
+        font-size: 8px;
+        margin: 3px;
+    }
+
+    .game-box {
+        grid-template-columns: repeat(3, 34px);
+        grid-template-rows: repeat(2, calc(34px * 1.5));
+    }
+
+    .card {
+        min-height: calc(34px * 1.5);
+        width: 34px;
+    }
+
+    .front-image {
+        width: 25px;
+        height: 25px;
+    }
+
+    .records {
+        font-size: 8px;
     }
 }
