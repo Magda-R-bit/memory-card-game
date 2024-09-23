@@ -15,7 +15,6 @@ let moves = 0;
 let timeLimit = 100;
 
 // Open and close functions for the rules icon
-
 how.onclick = function () {
     rules.style.display = "block";
 };
@@ -33,12 +32,14 @@ window.onclick = function (event) {
 };
 
 /**
- * Loads card data from cards.json file, duplicates it to create pairs, and prepares the game.
+ * Loads card data from cards.json file, duplicates it to create pairs, and 
+ * prepares the game.
  * 
- * This function fetches the card data from ".data/cards.json", creates pairs by duplicating the fetched data, shuffles the cards, and generates them for use in the game.
- * If an error occurs during the fetch operation, an error message is logged to the consol.
+ * This function fetches the card data from ".data/cards.json", creates pairs 
+ * by duplicating the fetched data, shuffles the cards, and generates them for 
+ * use in the game. If an error occurs during the fetch operation, an error 
+ * message is logged to the consol.
  */
-
 function loadCards() {
     fetch("assets/data/cards.json")
         .then((res) => res.json())
@@ -51,11 +52,11 @@ function loadCards() {
         .catch(error => {
             console.error("Error fetching the cards:", error);
         });
-
 }
 
-loadCards();
-
+/**
+ * Shuffles the deck of cards
+ */
 function shuffleCards() {
     let currentIndex = cards.length;
     while (currentIndex !== 0) {
@@ -64,11 +65,11 @@ function shuffleCards() {
 
         [cards[currentIndex], cards[randomIndex]] = [cards[randomIndex], cards[currentIndex]];
     }
-
 }
 
 /**
- * Dynamically loops over the cards array and generates a card element for each card, and adds cards to the game box.
+ * Dynamically loops over the cards array and generates a card element for each 
+ * card, and adds cards to the game box.
  */
 function generateCards() {
     for (let card of cards) {
@@ -86,11 +87,12 @@ function generateCards() {
 
         // Add event listener to handle the flip action when clicked
         cardElement.addEventListener("click", flipCard);
-
     }
-
 }
 
+/**
+ * Flips cards
+ */
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
@@ -109,9 +111,11 @@ function flipCard() {
 
     startTimer();
     checkForMatch();
-
 }
 
+/**
+ * Starts the timer in game
+ */
 function startTimer() {
     const timerElement = document.querySelector(".timer");
     if (timerInterval) {
@@ -126,32 +130,38 @@ function startTimer() {
             gameOver();
         }
     }, 1000);
-
 }
 
+/**
+ * Stops the timer in game
+ */
 function stopTimer() {
     clearInterval(timerInterval);
-
 }
 
+/**
+ * Resets the timer in game back to zero
+ */
 function resetTimer() {
     stopTimer();
     totalTime = 0;
     document.querySelector(".timer").innerText = `Timer: ${totalTime} sec`;
-
 }
 
+/**
+ * Resets
+ */
 function resetMoves() {
     moves = 0;
     recordMoves.innerText = `Moves: ${moves}`;
-
 }
 
 /**
  * Checks if the two selected cards are a match by comparing their names.
  * 
- * If the cards match, it disables further flipping by removing the click event listeners using the `disableCards` function.
- * If they do not match, the cards are unflipped.
+ * If the cards match, it disables further flipping by removing the click 
+ * event listeners using the `disableCards` function. If they do not match, 
+ * the cards are unflipped.
  */
 function checkForMatch() {
     let isMatch = firstCard.dataset.name === secondCard.dataset.name;
@@ -161,25 +171,28 @@ function checkForMatch() {
     } else {
         unflipCards();
     }
-
 }
 
+/**
+ * Disables cards, called after each 'go'
+ */
 function disableCards() {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
 
     resetBoard();
     checkWinCondition();
-
 }
 
+/**
+ * Unflips cards back to normal state
+ */
 function unflipCards() {
     setTimeout(() => {
         firstCard.classList.remove("flipped");
         secondCard.classList.remove("flipped");
         resetBoard();
     }, 1000);
-
 }
 
 /**
@@ -192,9 +205,11 @@ function checkWinCondition() {
             showWinnerIcon();
         }, 1000);
     }
-
 }
 
+/**
+ * Shows winning message and triggers confetti graphic
+ */
 function showWinnerIcon() {
     const winnerIcon = document.querySelector(".winner-icon");
     winnerIcon.classList.add("flipped");
@@ -216,7 +231,6 @@ function showWinnerIcon() {
     });
 
     clearInterval(timerInterval);
-
 }
 
 /**
@@ -235,16 +249,20 @@ function gameOver() {
     `;
 
     stopTimer();
-
 }
 
+/**
+ * Resets board
+ */
 function resetBoard() {
     firstCard = null;
     secondCard = null;
     lockBoard = false;
-
 }
 
+/**
+ * Restarts game and resets board
+ */
 function restart() {
     const winnerIcon = document.querySelector(".winner-icon");
     if (winnerIcon) {
@@ -263,3 +281,5 @@ function restart() {
     gameBox.innerHTML = "";
     generateCards();
 }
+
+loadCards();
