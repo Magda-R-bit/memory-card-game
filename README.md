@@ -96,6 +96,11 @@ Players have the option to start the game by clicking the "Start" button or simp
 
 ### Wireframes
 
+![Screenshot of desktop](/assets/images/readMe/desktopWireframe.png)
+![Screenshot of tablet](/assets/images/readMe/tabletWireframe.png)
+![Screenshot of mobile](/assets/images/readMe/mobileWireframe.png)
+
+
 ## Technologies Used
 
 ### Languages Used
