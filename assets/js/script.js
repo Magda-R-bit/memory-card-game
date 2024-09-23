@@ -18,11 +18,11 @@ let timeLimit = 100;
 
 how.onclick = function () {
     rules.style.display = "block";
-}
+};
 
 span.onclick = function () {
     rules.style.display = "none";
-}
+};
 
 window.onclick = function (event) {
     if (event.target == rules) {
@@ -30,7 +30,7 @@ window.onclick = function (event) {
     } else if (!rules.contains(event.target) && event.target != how) {
         rules.style.display = "none";
     }
-}
+};
 
 /**
  * Loads card data from cards.json file, duplicates it to create pairs, and prepares the game.
@@ -49,12 +49,12 @@ function loadCards() {
         })
 
         .catch(error => {
-            console.error("Error fetching the cards:", error)
+            console.error("Error fetching the cards:", error);
         });
 
 }
 
-loadCards()
+loadCards();
 
 function shuffleCards() {
     let currentIndex = cards.length;
@@ -156,7 +156,11 @@ function resetMoves() {
 function checkForMatch() {
     let isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
-    isMatch ? disableCards() : unflipCards();
+    if (isMatch) {
+        disableCards();
+    } else {
+        unflipCards();
+    }
 
 }
 

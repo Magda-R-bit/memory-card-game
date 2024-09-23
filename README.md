@@ -136,6 +136,9 @@ Players have the option to start the game by clicking the "Start" button or simp
 ![Screenshot of html test](/assets/images/readMe/htmlTest.png)
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+![Screenshot of css test](/assets/images/readMe/cssTest.png)
+
 - [JSHint Validator](https://jshint.com/)
 
 ## Bugs
